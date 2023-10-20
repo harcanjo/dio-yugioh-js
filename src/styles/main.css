@@ -81,9 +81,10 @@
 .card-versus__container {
   display: flex;
   flex-direction: column;
+  justify-items: center;
+  align-content: center;
   padding-top: 0.2rem;
   height: 300px;
-  margin-top: 5rem;
 }
 
 .versus-top,
