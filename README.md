@@ -7,6 +7,3 @@
 ## Detalhes 
 - Tecnologias: HTML, CSS e JavaScript
 - Link para jogar: [Yu-Gi-Oh!](https://harcanjo.github.io/dio-yugioh-js/)
-
-
-->> Estruturação geral
