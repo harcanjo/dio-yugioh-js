@@ -159,7 +159,7 @@ async function resetDuel() {
 
 async function playAudio(status) {
   const audio = new Audio(`./src/assets/audios/${status}.wav`);
-  audio.volume = 0.2;
+  audio.volume = 0.25;
 
   try {
     audio.play();
@@ -167,6 +167,9 @@ async function playAudio(status) {
 }
 
 function init() {
+  state.fieldCards.player.style.display = "none";
+  state.fieldCards.computer.style.display = "none";
+
   drawCards(5, state.playerSides.player1);
   drawCards(5, state.playerSides.computer);
 };
