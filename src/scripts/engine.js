@@ -92,13 +92,17 @@ async function setCardsField(cardId) {
 
   await hiddenCardDetails();
 
-  state.fieldCards.player.src = cardData[cardId].img;
-  state.fieldCards.computer.src = cardData[computerCardId].img;
+  await drawCardsInField(cardId, computerCardId);
 
   let duelResult = await checkDuelResults(cardId, computerCardId);
 
   await updateScore();
   await drawButton(duelResult);
+}
+
+async function drawCardsInField(cardId, computerCardId) {
+  state.fieldCards.player.src = cardData[cardId].img;
+  state.fieldCards.computer.src = cardData[computerCardId].img;
 }
 
 async function showHiddenCardImageFields(value) {
